@@ -8,12 +8,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        blue: "#2CBCE9",
-        red: "#DC4492",
+        blue: "#66FCF1",
+        red: "#45A29E",
         yellow: "FDCC49",
         grey: "#ededed",
-        "deep-blue": "#010026",
-        "dark-grey": "#757575",
+        "deep-blue": "#1F2833",
+        "dark-grey": "#cC5C6C7",
         "opague-black": "rgba(0, 0, 0, 0.35)"
       },
       backgroundImage: (theme) => ({
