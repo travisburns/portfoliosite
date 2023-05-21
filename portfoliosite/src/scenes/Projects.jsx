@@ -15,11 +15,12 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title }) => {
+const Project = ({ title, link, githubLink }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   
     const projectTitle = title.split(" ").join("-").toLowerCase();
+  
 
   return (
     <motion.div variants={projectVariant} className="relative">
@@ -29,8 +30,17 @@ const Project = ({ title }) => {
           Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla
           porttitor accumsan tincidunt.
         </p>
+        <div className="flex">
+        <a href={link} className="mt-5 text-blue-500 font-semibold hover:underline">
+          View Project
+        </a>
+        <a href={githubLink} className="mt-5 text-blue-500 font-semibold hover:underline">
+          Github
+        </a>
+        </div>
       </div>
       <img src={`src/assets/${projectTitle}.jpeg`} alt={projectTitle} />
+     
     </motion.div>
   );
 };
@@ -81,7 +91,12 @@ const Projects = () => {
           >
             BEAUTIFUL USER INTERFACES
           </div>
-          <Project title="Project 1" />
+          <Project title="Project 1" 
+          link="https://facebook.com" target="_blank"
+          githubLink="https://github.com/username/project1"
+          />
+        
+           
           <Project title="Project 2" />
 
           {/* ROW 2 */}
