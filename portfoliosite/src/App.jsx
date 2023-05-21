@@ -5,7 +5,7 @@ import MySkills from './scenes/MySkills';
 import LineGradient from './components/LineGradient'
 import useMediaQuery from "./hooks/useMediaQuery";
 import Navbar from './scenes/Navbar'
-
+import Projects from './scenes/Projects'
 
 function App() {
   const [selectedPage, setSelectedPage] = useState('home');
@@ -15,8 +15,8 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY === 0) setIsTipOfPage(true);
-      if (window.scrollY !== 0) setIsTipOfPage(false);
+      if (window.scrollY === 0) setIsTopOfPage(true);
+      if (window.scrollY !== 0) setIsTopOfPage(false);
     }
 
     window.addEventListener("scroll", handleScroll);
@@ -43,8 +43,12 @@ function App() {
     <LineGradient />
    <div className="w-5/6 mx-auto md:h-full">
         <MySkills />
+        
    </div>
-   
+   <LineGradient />
+   <div className="w-5/6 mx-auto">
+    <Projects />
+   </div>
    </div>
   )
 }
