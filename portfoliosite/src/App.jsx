@@ -6,7 +6,7 @@ import LineGradient from './components/LineGradient'
 import useMediaQuery from "./hooks/useMediaQuery";
 import Navbar from './scenes/Navbar'
 import Projects from './scenes/Projects'
-
+import Testimonials from "./scenes/Testimonials"
 function App() {
   const [selectedPage, setSelectedPage] = useState('home');
   const [isTopOfPage, setIsTopOfPage] = useState(true)
@@ -49,7 +49,13 @@ function App() {
    <div className="w-5/6 mx-auto">
     <Projects />
    </div>
+
+   <LineGradient />
+   <div className="w-5/6 mx-auto md:h-full">
+    <Testimonials />
    </div>
+
+</div>
   )
 }
 
