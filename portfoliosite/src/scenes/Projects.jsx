@@ -15,11 +15,11 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title, link, githubLink }) => {
+const Project = ({ title, link, githubLink, imageSrc }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   
-    const projectTitle = title.split(" ").join("-").toLowerCase();
+    
   
 
   return (
@@ -37,9 +37,10 @@ const Project = ({ title, link, githubLink }) => {
         <a href={githubLink} className="mt-5 text-blue-500 font-semibold hover:underline">
           Github
         </a>
+        
         </div>
       </div>
-      <img src={`src/assets/${projectTitle}.jpeg`} alt={projectTitle} />
+      <img src={imageSrc} alt={title} />
      
     </motion.div>
   );
@@ -91,9 +92,11 @@ const Projects = () => {
           >
             BEAUTIFUL USER INTERFACES
           </div>
-          <Project title="Project 1" 
+          <Project 
+          title="Project 1" 
           link="https://facebook.com" target="_blank"
           githubLink="https://github.com/username/project1"
+          imageSrc="src/assets/project-1.jpeg"
           />
         
            
