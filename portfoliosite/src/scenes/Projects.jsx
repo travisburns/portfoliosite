@@ -100,16 +100,48 @@ const Projects = () => {
           />
         
            
-          <Project title="Project 2" />
+          <Project 
+          title="Project 2" 
+          link="https://facebook.com" target="_blank"
+          githubLink="https://github.com/username/project1"
+          imageSrc="src/assets/project-2.jpeg"
+          
+          />
 
           {/* ROW 2 */}
-          <Project title="Project 3" />
-          <Project title="Project 4" />
-          <Project title="Project 5" />
+          <Project 
+          title="Project 3" 
+          link="https://facebook.com" target="_blank"
+          githubLink="https://github.com/username/project1"
+          imageSrc="src/assets/project-3.jpeg"
+          />
+          <Project 
+          title="Project 4" 
+          link="https://facebook.com" target="_blank"
+          githubLink="https://github.com/username/project1"
+          imageSrc="src/assets/project-4.jpeg"
+          />
+
+          <Project 
+          title="Project 5" 
+          link="https://facebook.com" target="_blank"
+          githubLink="https://github.com/username/project1"
+          imageSrc="src/assets/project-5.jpeg"
+          />
 
           {/* ROW 3 */}
-          <Project title="Project 6" />
-          <Project title="Project 7" />
+          <Project 
+          title="Project 6" 
+          link="https://facebook.com" target="_blank"
+          githubLink="https://github.com/username/project1"
+          imageSrc="src/assets/project-6.jpeg"
+          />
+          <Project 
+          title="Project 7" 
+          link="https://facebook.com" target="_blank"
+          githubLink="https://github.com/username/project1"
+          imageSrc="src/assets/project-7.jpeg"
+          />
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
