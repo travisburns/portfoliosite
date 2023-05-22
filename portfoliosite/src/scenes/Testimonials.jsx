@@ -1,9 +1,12 @@
 import LineGradient from "../components/LineGradient";
 import {motion} from "framer-motion"
+import image1 from "../assets/person-1.png"
+import image2 from "../assets/person-2.png"
+import image3 from "../assets/person-3.png"
 
 const Testimonials = () => {
     const TestimonialStyles = `mx-auto relative max-w-[400px] h-[350px] flex flex-col 
-    justify-end p-16 mt-48 before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`
+    justify-end pt-16 mt-48 before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`
 
     return (
         <section id="testimonials" className="pt-32 pb-16">
@@ -42,7 +45,8 @@ const Testimonials = () => {
               visible: { opacity: 1, scale: 1 },
             }}
           >
-            <p className="font-playfair text-6xl">"</p>
+            <img src={image1} />
+            <p className="font-playfair text-6xl">""</p>
             <p className="text-center text-xl">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, voluptate!
             </p>
@@ -59,7 +63,8 @@ const Testimonials = () => {
               visible: { opacity: 1, scale: 1},
             }}
           >
-            <p className="font-playfair text-6xl">"</p>
+             <img src={image2} />
+            <p className="font-playfair text-6xl">""</p>
             <p className="text-center text-xl">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, tempore!
             </p>
@@ -76,7 +81,8 @@ const Testimonials = () => {
               visible: { opacity: 1, scale: 1},
             }}
           >
-            <p className="font-playfair text-6xl">"</p>
+            <img src={image3} />
+            <p className="font-playfair text-6xl">""</p>
             <p className="text-center text-xl">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, natus!
             </p>

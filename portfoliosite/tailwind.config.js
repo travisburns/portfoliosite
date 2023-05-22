@@ -28,9 +28,9 @@ export default {
       },
       content: {
         brush: "url(./assets/brush.png')",
-        person1: "url(./assets/person-1.png')",
-        person2: "url(./assets/person-2.png')",
-        person3: "url(./assets/person-3.png')",
+        person1: "url(../assets/person-1.png')",
+        person2: "url(../assets/person-2.png')",
+        person3: "url(../assets/person-3.png')",
       }
 
     },
