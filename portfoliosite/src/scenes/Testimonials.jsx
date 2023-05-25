@@ -12,7 +12,7 @@ const Testimonials = () => {
         <section id="testimonials" className="pt-32 pb-16">
             {/*HEADING */}
            
-            <motion.div
+          <motion.div
           className="md:w-1/3 text-center md:text-left"
           initial="hidden"
           whileInView="visible"
