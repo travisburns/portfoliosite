@@ -3,7 +3,7 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import {motion} from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import profileimg from "../assets/profile-img.png"
-import Canvas from './Canvas';
+import StarsCanvas from './StarsCanvas';
 
 const Landing = ({setSelectedPage}) => {
     const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
@@ -17,7 +17,7 @@ const Landing = ({setSelectedPage}) => {
             {isAboveMediumScreens ? (
                 <div
                 className=" relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 
-                before:rounded-t-[400px] before:w-full before:max-w-[400px] before:h-full
+                 before:w-full before:max-w-[400px] before:h-full
                 before:border-2 before:border-blue before:z-index-[-1]"
                 
                 >
@@ -35,7 +35,7 @@ const Landing = ({setSelectedPage}) => {
                 }}
 
                     alt="profile" 
-                    className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full
+                    className="hover:filter hover:saturate-200 transition duration-500 relative z-10 right-[4.5rem] bottom-[4.5rem] w-full
                     max-w-[400px] md:max-w-[600px]"
                     src={profileimg}
                     />
@@ -52,7 +52,7 @@ const Landing = ({setSelectedPage}) => {
                 </div>
             {/* MAIN SECTION */}
             <div className="z-30 basis-2/5 mt-12 md:mt-32">
-            <Canvas />
+            <StarsCanvas />
                 {/* HEADINGS */}
                 <motion.div
                     initial="hidden"

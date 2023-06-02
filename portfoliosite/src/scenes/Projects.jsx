@@ -1,6 +1,8 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
 
+
+
 const container = {
   hidden: {},
   visible: {
@@ -23,7 +25,9 @@ const Project = ({ title, link, githubLink, imageSrc }) => {
   
 
   return (
+    
     <motion.div variants={projectVariant} className="relative">
+      
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
         <p className="mt-7">
@@ -48,7 +52,9 @@ const Project = ({ title, link, githubLink, imageSrc }) => {
 
 const Projects = () => {
   return (
+    
     <section id="projects" className="pt-48 pb-48">
+      
       {/* HEADINGS */}
       <motion.div
         className="md:w-2/5 mx-auto text-center"
@@ -69,14 +75,17 @@ const Projects = () => {
             <LineGradient width="w-2/3" />
           </div>
         </div>
+        
         <p className="mt-10 mb-10">
           Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
           fames odio in at. At magna ornare dictum lectus. Purus massa morbi
           purus nec eget eleifend ut elit.
         </p>
+        
       </motion.div>
 
       {/* PROJECTS */}
+      
       <div className="flex justify-center">
         <motion.div
           className="sm:grid sm:grid-cols-3"
@@ -150,6 +159,7 @@ const Projects = () => {
           </div>
         </motion.div>
       </div>
+      
     </section>
   );
 };

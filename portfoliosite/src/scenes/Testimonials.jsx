@@ -3,16 +3,19 @@ import {motion} from "framer-motion"
 import image1 from "../assets/person-1.png"
 import image2 from "../assets/person-2.png"
 import image3 from "../assets/person-3.png"
+import StarsCanvas from "./StarsCanvas";
 
 const Testimonials = () => {
     const TestimonialStyles = `mx-auto relative max-w-[400px] h-[350px] flex flex-col 
     justify-end pt-16 mt-48 before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`
 
     return (
+      
         <section id="testimonials" className="pt-32 pb-16">
             {/*HEADING */}
-           
+            
           <motion.div
+          
           className="md:w-1/3 text-center md:text-left"
           initial="hidden"
           whileInView="visible"
@@ -23,6 +26,7 @@ const Testimonials = () => {
             visible: { opacity: 1, x: 0 },
           }}
         >
+          
           <p className="font-playfair font-semibold text-4xl mb-5 text-red">
             TESTIMONIALS
           </p>
@@ -46,6 +50,7 @@ const Testimonials = () => {
             }}
           >
             <img src={image1} />
+            
             <p className="font-playfair text-6xl">""</p>
             <p className="text-center text-xl">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, voluptate!
