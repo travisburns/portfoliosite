@@ -11,6 +11,8 @@ import Contact from "./scenes/Contact"
 import Footer from "./scenes/Footer";
 import StarsCanvas from "./scenes/StarsCanvas.jsx";
 
+
+
 function App() {
   const [selectedPage, setSelectedPage] = useState('home');
   const [isTopOfPage, setIsTopOfPage] = useState(true)
@@ -57,6 +59,7 @@ function App() {
    </div>
    
    <div className="w-5/6 mx-auto">
+  
     <Projects />
    </div>
 

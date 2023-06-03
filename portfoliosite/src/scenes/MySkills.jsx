@@ -146,7 +146,7 @@ const MySkills = () => {
                 Imaginative
               </p>
             </div>
-            <StarsCanvas4 className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
+            <StarsCanvas4 className="w-1/2 md:w-3/4 h-32 relative bottom-[25px] right-0 top-0 z-[11]" />
             
           </div>
           <div className="mt-5">
