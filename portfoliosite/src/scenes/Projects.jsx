@@ -8,9 +8,10 @@ import github from "../assets/github.png"
 const Projects = () => {
   return (
     
-    <section id="projects" className="pt-48 pb-48">
+    <section id="projects" className="pt-48 pb-48 z-[12] relative bottom-[900px]">
       <div className="projects-title w-[90vw] ml-[5vw] mr-[5vw] pb-[12rem]">
       <p className="project-title_desc text-[2.7em] w-[100%] font-playfair mb-5"><span className="text-red">Flawlessly</span> Fusing <span className="text-red">Creativity</span> and <span className="text-red">Expertise</span></p>
+      
       <div className="project-title-para">
         <p className="project-title-para-text w-[262px] h-[35px] text-[1.1rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint minima consequatur, eius nobis odit accusantium.</p>
       </div>

@@ -10,7 +10,7 @@ import Testimonials from "./scenes/Testimonials"
 import Contact from "./scenes/Contact"
 import Footer from "./scenes/Footer";
 import StarsCanvas from "./scenes/StarsCanvas.jsx";
-
+import ProjectBackground from "./scenes/ProjectBackground.jsx"
 
 
 function App() {
@@ -57,9 +57,9 @@ function App() {
         <MySkills />
        
    </div>
-   
+   <ProjectBackground />
    <div className="w-5/6 mx-auto">
-
+    
     <Projects />
    </div>
 
