@@ -58,7 +58,7 @@ function App() {
        
    </div>
    <ProjectBackground />
-   <div className="w-5/6 mx-auto">
+   <div className="w-6/6 mx-auto">
     
     <Projects />
    </div>
