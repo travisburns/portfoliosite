@@ -29,7 +29,7 @@ const Stars = (props) => {
 
 const StarsCanvas4 = () => {
   return (
-    <div className='canvas-1 w-full h-auto relative inset-0 z-[11] h-[600px]'>
+    <div className='canvas-1 w-full relative inset-0 z-[11] h-[1200px]'>
       <Canvas className="canvas-control relative bottom-[7rem]" camera={{ position: [0, 0, 1] }}>
         <Suspense className="canvas-child?" fallback={null}>
           <Stars />
