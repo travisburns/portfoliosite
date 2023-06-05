@@ -23,17 +23,18 @@ const Projects = () => {
             <div className="item-img h-[150px] xs:h-[200px] sm:h-[250px] relative">
               <img src={Project1} className="featured-item-image-inner relative w-[70%] h-[100%]"/>
               </div>
-              <div className="item-context p-[20px] relative bottom-[10rem]">
-              <div className="item-desc relative m-[0 0 2.5em] text-[0.5rem] leading-[1.3em] text-left font-playfair text-black bottom-[-1rem] xs:bottom-[2rem]  sm:bottom-[5rem]">
+              <div className="item-context p-[20px] relative bottom-[5rem] sm:bg-black sm:p-[20px] sm:w-[15%] sm:h-[100px] sm:top[-3rem] sm:left-[30rem]">
+              <div className="item-desc relative m-[0 0 2.5em] text-[0.5rem] leading-[1.3em] text-left font-playfair text-black bottom-[7rem] xs:bottom-[2rem] sm:text-white sm:bottom-[0.8rem]">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
      
-              <div className="item-title relative m-[0 0 2.5em] top-[5rem] text-[0.5rem] leading-[1.3em] text-left font-Lato text-black">
+              <div className="item-title relative m-[0 0 2.5em] top-[0rem] text-[0.5rem] leading-[1.3em] text-left font-Lato text-black sm:text-white sm:top-[1rem]">
                 <p>Lorem ipsum dolor sit amet.</p>
               </div>
-              <div className="project-arrow relative top-[7rem]">
-                <img src={projectArrow} alt="" className="absolute left-[11rem] bottom-[34px] w-[1em] h-[1em]"/>
-                <img src={github} alt="" className="absolute left-[10.6rem] bottom-[60px] w-[2em] h-[2em]" />
+              <div className="project-links relative top-[7rem] xs:left-[5rem] sm:flex sm:top-[1rem] sm:left-[3.5rem]">
+              <img src={github} alt="" className="  bottom-[60px] w-[2em] h-[2em] sm:top-[-0.5rem] relative" />
+                <img src={projectArrow} alt="" className=" bottom-[34px] w-[1em] h-[1em] "/>
+                
               </div>
              
               </div>
