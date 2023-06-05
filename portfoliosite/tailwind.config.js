@@ -38,6 +38,9 @@ export default {
       xs: "480px",
       sm: "768px",
       md: "1060px",
+      lg: "1280px",
+      xl: "1536px",
+      xxl: "1920px"
     }
   },
   plugins: [],
