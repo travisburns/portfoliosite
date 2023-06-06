@@ -12,7 +12,7 @@ const MySkills = () => {
 
   return (
     
-    <section id="skills" className="pt-10 pb-24 z-[1]">
+    <section id="skills" className="pt-10 pb-24px relative z-[12]">
     
       {/* HEADER AND IMAGE SECTION */}
       <div className="md:flex md:justify-between md:gap-16 mt-32">

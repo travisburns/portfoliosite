@@ -57,9 +57,9 @@ function App() {
         <MySkills />
        
    </div>
-   <ProjectBackground />
+   
    <div className="w-6/6 mx-auto">
-    
+   
     <Projects />
    </div>
 
