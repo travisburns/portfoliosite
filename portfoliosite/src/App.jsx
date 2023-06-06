@@ -32,14 +32,14 @@ function App() {
   }, []);
 
   return (
-   <div className="app bg-deep-blue">
+   <div className="app ">
     
     <Navbar 
     isTopOfPage={isTopOfPage}   
     selectedPage ={selectedPage} 
     setSelectedPage={setSelectedPage}
     /> 
-    <div className="w-5/6 mx-auto md:h-full">
+    <div className="w-5/6 mx-auto md:h-full ">
     
       {isAboveMediumScreens && (
         <DotGroup
@@ -52,7 +52,7 @@ function App() {
     </div>
     
     
-   <div className="w-5/6 mx-auto md:h-full">
+   <div className="w-5/6 mx-auto md:h-full ">
         
         <MySkills />
        

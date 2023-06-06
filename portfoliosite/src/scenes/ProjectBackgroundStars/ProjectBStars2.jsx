@@ -5,7 +5,7 @@ import * as random from "maath/random/dist/maath-random.esm";
 
 const Stars = (props) => {
   const ref = useRef();
-  const [sphere] = useState(() => random.inSphere(new Float32Array(9000), { radius: 4 }));
+  const [sphere] = useState(() => random.inSphere(new Float32Array(9000), { radius: 1 }));
 
   useFrame((state, delta) => {
     ref.current.rotation.x -= delta / 10;
@@ -13,12 +13,12 @@ const Stars = (props) => {
   });
 
   return (
-    <group rotation={[0, 0, Math.PI / 10]}>
+    <group rotation={[0, 0, Math.PI / 112]}>
       <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
         <PointMaterial
           transparent
-          color='teal'
-          size={0.100}
+          color='blue'
+          size={0.010}
           sizeAttenuation={true}
           depthWrite={false}
         />
@@ -27,20 +27,20 @@ const Stars = (props) => {
   );
 };
 
-const StarsCanvas4 = () => {
+const ProjectBStars2 = () => {
   return (
-    <div className='canvas-1 w-full relative inset-0 z-[11] h-[900px] xl:h-[600px]'>
-      <Canvas className="canvas-control relative " camera={{ position: [0, 0, 1] }}>
-        <Suspense className="canvas-child?" fallback={null}>
-          <Stars />
-        </Suspense>
+    <div className='canvas-1 w-full h-auto relative inset-0 z-[11] xxl:h-[600px] xxl:bottom-[30rem]'>
+    <Canvas className="canvas-control relative xxl:bottom-[38rem]" camera={{ position: [0, 0, 1] }}>
+      <Suspense className="canvas-child?" fallback={null}>
+        <Stars />
+      </Suspense>
 
-        <Preload all />
-      </Canvas>
-    </div>
+      <Preload all />
+    </Canvas>
+  </div>
   );
 };
 
-export default StarsCanvas4;
+export default ProjectBStars2;
 
 
