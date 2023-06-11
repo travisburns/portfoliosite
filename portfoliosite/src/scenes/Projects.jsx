@@ -4,27 +4,28 @@ import coca from "../assets/coca.png"
 import projectArrow from "../assets/project-arrow.png"
 import github from "../assets/github.png"
 import ProjectBackground from "../scenes/ProjectBackground";
-
+import SkillsBackground from "./SkillsBackground";
 
 const Projects = () => {
   return (
     
     <section id="projects" className="pt-48  h-[1139px] xl:h-[1600px] z-[12] relative">
-      <ProjectBackground className="relative z-[11]"/>
     
+      <ProjectBackground className="relative z-[11]"/>
+      
       <div className=" bg-gradient-to-r from-slate-950 relative z-[12] bottom-[45rem] xl:bottom-[68rem] xxl:bottom-[37.5rem]">
       {/* Project title text */}
       <div className="projects-title w-[90vw]  w-5/6 pb-[12rem] relative left-[8%]">
       <p className="project-title_desc text-[2.7em] w-[100%] font-playfair mb-5 xl:text-[7rem] xl:w-[50%]"><span className="text-red">Flawlessly</span> Fusing <span className="text-red">Creativity</span> and <span className="text-red">Expertise</span></p>
       
-      <div className="project-title-para">
-        <p className="project-title-para-text w-[262px] h-[35px] text-[1.1rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint minima consequatur, eius nobis odit accusantium.</p>
-      </div>
+      
       </div>
       {/* {Project container} */}
-      <div className="item-container  relative  w-[82.5%] text-[.65em] ml-[1.5rem] sm:ml-[4rem] md:ml-[5.5rem] lg:ml-[8.2rem] xxl:ml-[10rem] ">
+     
+      <div className="item-container  relative  w-[82.5%] text-[.65em] ml-[1.5rem] sm:ml-[4rem] md:ml-[5.5rem] lg:ml-[8.2rem] xxl:ml-[10rem] z-[12]">
+      
         {/* Project info */}
-        <div className="item-info">
+        <div className="item-info relative z-[12]">
           {/* Project image */}
           <div className="item-image-container relative">
             <div className="item-img  h-[150px] xs:h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] xxl:h-[506.66px] relative">

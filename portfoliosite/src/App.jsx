@@ -11,7 +11,7 @@ import Contact from "./scenes/Contact"
 import Footer from "./scenes/Footer";
 import StarsCanvas from "./scenes/StarsCanvas.jsx";
 import ProjectBackground from "./scenes/ProjectBackground.jsx"
-
+import SkillsBackground from "./scenes/SkillsBackground";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState('home');
@@ -51,15 +51,15 @@ function App() {
       <Landing setSelectedPage={setSelectedPage} />
     </div>
     
-    
+   
    <div className="w-5/6 mx-auto md:h-full ">
-        
+   
         <MySkills />
        
    </div>
    
    <div className="w-6/6 mx-auto">
-   
+  
     <Projects />
    </div>
 

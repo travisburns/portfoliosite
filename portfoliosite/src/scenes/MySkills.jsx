@@ -6,16 +6,17 @@ import StarsCanvas from "./StarsCanvas";
 import StarsCanvas2 from "./StarsCanvas2";
 import StarsCanvas3 from "./StarsCanvas3";
 import StarsCanvas4 from "./StarsCanvas4";
+import SkillsBackground from "./SkillsBackground";
 
 const MySkills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
 
   return (
     
-    <section id="skills" className="pt-10 pb-24px relative z-[12] ">
-    
+    <section id="skills" className="pt-10 pb-24px relative  z-[12] ">
+    <SkillsBackground className=''/>
       {/* HEADER AND IMAGE SECTION */}
-      <div className="md:flex md:justify-between md:gap-16 mt-32">
+      <div className=" md:flex md:justify-between md:gap-16 mt-32">
       
         <motion.div
           className="md:w-1/3"
@@ -86,9 +87,9 @@ const MySkills = () => {
           </div>
           <div className="mt-5">
             <p>
-              A auctor pharetra hendrerit mattis amet etiam interdum platea. Est
-              morbi porttitor scelerisque fermentum, sagittis non egestas. Amet
-              odio sit sagittis,
+            Extensive experience in React, building dynamic and interactive web applications. 
+            Leveraging component-based architecture and state management, 
+            delivering efficient solutions for seamless user experiences and optimized performance.
             </p>
           </div>
           <StarsCanvas2 className="canvas-2 w-1/2 md:w-3/4 h-32 relative bottom-[25px] right-0 top-0 z-[11]" />
@@ -119,10 +120,9 @@ const MySkills = () => {
           </div>
           <div className="mt-5">
             <p>
-              Urna, eget pulvinar dolor cursus volutpat dictum odio. Nec ultricies
-              amet in in neque nibh tortor. Libero sed pretium justo nulla blandit
-              nulla amet habitant iaculis. Iaculis in congue vitae sollicitudin
-              faucibus a
+            Through innovative thinking, Consistently striving to push boundaries and explore new possibilities. 
+            Embracing emerging technologies and creative solutions, bringing fresh perspectives and transformative 
+            change to deliver impactful results.
             </p>
           </div>
         </motion.div>
@@ -151,10 +151,8 @@ const MySkills = () => {
           </div>
           <div className="mt-5">
             <p>
-              Accumsan eu fringilla nisi, eget. Vitae, eget ut id proin arcu in
-              curabitur. Lectus libero, egestas enim aliquam quis felis amet.
-              Sagittis, amet netus fringilla netus lobortis odio sed platea.
-              Bibendum.
+            With an imaginative approach, bringing forth unique and creative ideas, weaving them into captivating web experiences. 
+            Through innovative design and storytelling, striving to leave a lasting impression, making the ordinary extraordinary.
             </p>
           </div>
         </motion.div>

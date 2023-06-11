@@ -66,7 +66,7 @@ const Landing = ({setSelectedPage}) => {
                 >
                 <p className="text-6xl font-playfair z-10 text-center md:text-start">
                     Travis {" "}
-                    <span className="xs:relative xs:text-deep-blue xs:font-semibold z-20
+                    <span className="xs:relative xs:text-red xs:font-semibold z-20
                      xs:before:content-brush before:absolute before:-left-[25px]
                      before:-top-[70px] before:z-[-1]">
                         Burns
