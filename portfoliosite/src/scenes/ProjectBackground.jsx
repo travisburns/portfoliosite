@@ -34,7 +34,7 @@ const Stars = (props) => {
 
 const StarsCanvas4 = () => {
   return (
-    <div className='canvas-1 w-full relative inset-0 z-[11] h-[900px] xl:h-[600px]'>
+    <div className='canvas-1 w-full relative inset-0 z-[11] top-[2.7rem] h-[250px] md:top-[19rem] md:h-[380px] xl:top-[0.2rem] xl:h-[600px] '>
       
       <Canvas className="canvas-control relative " camera={{  position: [0, 0, 1] }}>
         
