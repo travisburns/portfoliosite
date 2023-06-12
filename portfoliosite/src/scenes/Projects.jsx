@@ -16,7 +16,17 @@ const Projects = () => {
       <div className=" bg-gradient-to-r from-slate-950 relative z-[12] bottom-[13rem] h-[16rem] md:bottom-[5rem] md:h-[25rem] xl:bottom-[59rem] xl:h-[38.2rem] xxl:bottom-[77.5rem]">
       {/* Project title text */}
       <div className="projects-title w-[90vw]  w-5/6 pb-[12rem] relative left-[8%] ">
-      <p className="project-title_desc text-[2.7em] w-[100%] font-playfair mb-5 sm:w-[50%] md:w-[40%] md:text-[3.7rem] lg:text-[4rem] xl:text-[6rem] xl:w-[50%] xl:mt-[40rem]"><span className="text-red">Flawlessly</span> Fusing <span className="text-red">Creativity</span> and <span className="text-red">Expertise</span></p>
+      <p className="project-title_desc text-[2.7em] w-[100%] font-playfair mb-5 sm:w-[50%] md:w-[40%] md:text-[3.7rem] lg:text-[4rem] xl:text-[6rem] xl:w-[50%] xl:mt-[40rem]">
+        <motion.span className="text-red"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.5 }}
+        transition={ {duration: 1.5 }}
+        variants={{
+            hidden: { opacity: 0, y: -50 },
+            visible: { opacity: 1, y: 0, scale: 100 }
+        }}
+      >Flawlessly</motion.span> Fusing <span className="text-red">Creativity</span> and <span className="text-red">Expertise</span></p>
       
       
       </div>
@@ -27,7 +37,16 @@ const Projects = () => {
     
     
         {/* Project info */}
-        <div className="item-info relative z-[12]">
+        <motion.div className="item-info relative z-[12]"
+         initial="hidden"
+         whileInView="visible"
+         viewport={{ once: false, amount: 0.5 }}
+         transition={ {duration: 1.5 }}
+         variants={{
+             hidden: { opacity: 0, y: 50 },
+             visible: { opacity: 1, y: 0, }
+         }}
+        >
           {/* Project image */}
           <div className="item-image-container relative">
             <div className="item-img  h-[150px] xs:h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] xxl:h-[706.66px] relative">
@@ -36,10 +55,19 @@ const Projects = () => {
               {/* Project info/ turns into right hand box at 860 width */}
              
           </div>
-        </div>
+        </motion.div>
 
       </div>
-      <div className="item-context p-[20px] relative z-[13] bottom-[5rem] sm:bg-black xs:bottom-[10rem] sm:p-[20px] sm:w-[15%] sm:h-[100px] sm:bottom-[4rem] sm:left-[70%] sm:h-[100%] xxl:w-[420px] xxl:min-h-[236px] xxl:p-[50px 30px] xxl:bottom-[10rem] xxl:left-[65%]">
+      <motion.div className="item-context p-[20px] relative z-[13] bottom-[5rem] sm:bg-black xs:bottom-[10rem] sm:p-[20px] sm:w-[15%] sm:h-[100px] sm:bottom-[4rem] sm:left-[70%] sm:h-[100%] xxl:w-[420px] xxl:min-h-[236px] xxl:p-[50px 30px] xxl:bottom-[10rem] xxl:left-[65%]"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.5 }}
+        transition={ {duration: 1.5 }}
+        variants={{
+            hidden: { opacity: 0, y: -50 },
+            visible: { opacity: 1, y: 0, }
+        }}
+      >
               {/* Above is the parent container, likely will need to be overaching stats on this above and take them off the below if possible */}
               <div className="item-desc relative m-[0 0 2.5em] text-[0.5rem] leading-[1.3em] text-left font-playfair text-white bottom-[4rem] xs:bottom-[2rem] sm:text-white sm:bottom-[0.8rem] xxl:text-[1rem]">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -55,7 +83,7 @@ const Projects = () => {
               </div>
               
              
-              </div>
+              </motion.div>
       </div>
     </section>
   );
