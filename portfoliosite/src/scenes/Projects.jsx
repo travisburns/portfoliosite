@@ -5,6 +5,8 @@ import projectArrow from "../assets/project-arrow.png"
 import github from "../assets/github.png"
 import ProjectBackground from "../scenes/ProjectBackground";
 import SkillsBackground from "./SkillsBackground";
+import ProjectBStars1 from "./ProjectBackgroundStars/ProjectBStars1";
+
 
 const Projects = () => {
   return (
@@ -31,10 +33,9 @@ const Projects = () => {
       
       </div>
       {/* {Project container} */}
-     
-      <div className="item-container  relative  w-[82.5%] text-[.65em] ml-[1.5rem] sm:ml-[4rem] md:ml-[5.5rem] lg:ml-[8.2rem] xxl:ml-[10rem]  z-[12]">
+       <ProjectBStars1 className="relative z-[11]"/>
+      <div className="item-container  relative bottom-[45rem] w-[82.5%] text-[.65em] ml-[1.5rem] sm:ml-[4rem] md:ml-[5.5rem] lg:ml-[8.2rem] xxl:ml-[10rem]  z-[12]">
       
-    
     
         {/* Project info */}
         <motion.div className="item-info relative z-[12]"
@@ -49,7 +50,7 @@ const Projects = () => {
         >
           {/* Project image */}
           <div className="item-image-container relative">
-            <div className="item-img  h-[150px] xs:h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] xxl:h-[706.66px] relative">
+            <div className="item-img  h-[150px] xs:h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] xxl:h-[706.66px] xxl:top-[-10rem] relative z-[12] ">
               <img src={coca} className="featured-item-image-inner relative w-[86%] h-[100%]"/>
               </div>
               {/* Project info/ turns into right hand box at 860 width */}
@@ -58,7 +59,7 @@ const Projects = () => {
         </motion.div>
 
       </div>
-      <motion.div className="item-context p-[20px] relative z-[13] bottom-[5rem] sm:bg-black xs:bottom-[10rem] sm:p-[20px] sm:w-[15%] sm:h-[100px] sm:bottom-[4rem] sm:left-[70%] sm:h-[100%] xxl:w-[420px] xxl:min-h-[236px] xxl:p-[50px 30px] xxl:bottom-[10rem] xxl:left-[65%]"
+      <motion.div className="item-context p-[20px] relative z-[13] bottom-[51rem] left-[1rem] sm:bg-black xs:bottom-[55rem] sm:p-[20px] sm:w-[15%] sm:h-[100px] sm:bottom-[50rem] sm:left-[70%] sm:h-[100%] xxl:w-[420px] xxl:min-h-[236px] xxl:p-[50px 30px] xxl:bottom-[65rem] xxl:left-[65%]"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.5 }}

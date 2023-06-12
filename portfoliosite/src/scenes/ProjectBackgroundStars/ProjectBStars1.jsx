@@ -5,11 +5,11 @@ import * as random from "maath/random/dist/maath-random.esm";
 
 const Stars = (props) => {
   const ref = useRef();
-  const [sphere] = useState(() => random.inSphere(new Float32Array(9000), { radius: 1 }));
+  const [sphere] = useState(() => random.inSphere(new Float32Array(4000), { radius: 1 }));
 
   useFrame((state, delta) => {
-    ref.current.rotation.x -= delta / 10;
-    ref.current.rotation.y -= delta / 10;
+    ref.current.rotation.x -= delta / 12;
+    ref.current.rotation.y -= delta / 1;
   });
 
   return (
@@ -17,8 +17,8 @@ const Stars = (props) => {
       <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
         <PointMaterial
           transparent
-          color='teal'
-          size={0.0100}
+          color='red'
+          size={0.010}
           sizeAttenuation={true}
           depthWrite={false}
         />
@@ -29,7 +29,7 @@ const Stars = (props) => {
 
 const ProjectBStars1 = () => {
   return (
-    <div className='canvas-1 w-full h-auto relative inset-0 z-[11] xxl:h-[600px] xxl:bottom-[10rem]'>
+    <div className='canvas-1 w-[100%] relative inset-0 z-[11] top-[-14rem] xs:top-[-10rem] xxl:h-[1000px] xxl:top-[-1rem] z-[11] '>
       <Canvas className="canvas-control relative xxl:bottom-[1rem]" camera={{ position: [0, 0, 1] }}>
         <Suspense className="canvas-child?" fallback={null}>
           <Stars />
