@@ -59,7 +59,7 @@ const Projects = () => {
         </motion.div>
 
       </div>
-      <motion.div className="item-context p-[20px] relative z-[13] bottom-[51rem] left-[1rem] sm:bg-black xs:bottom-[55rem] sm:p-[20px] sm:w-[15%] sm:h-[100px] sm:bottom-[50rem] sm:left-[70%] sm:h-[100%] xxl:w-[420px] xxl:min-h-[236px] xxl:p-[50px 30px] xxl:bottom-[65rem] xxl:left-[65%]"
+      <motion.div className="item-context p-[20px] relative z-[13] bottom-[51rem] left-[1rem] sm:bg-[#040404] xs:bottom-[55rem] sm:p-[20px] sm:w-[15%] sm:h-[100px] sm:bottom-[50rem] sm:left-[70%] sm:h-[100%] xxl:w-[420px] xxl:min-h-[236px] xxl:p-[50px 30px] xxl:bottom-[65rem] xxl:left-[65%]"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.5 }}

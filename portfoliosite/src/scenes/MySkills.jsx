@@ -7,14 +7,18 @@ import StarsCanvas2 from "./StarsCanvas2";
 import StarsCanvas3 from "./StarsCanvas3";
 import StarsCanvas4 from "./StarsCanvas4";
 import SkillsBackground from "./SkillsBackground";
+import { Canvas } from "@react-three/fiber";
+import Cloud from "./Cloud";
 
 const MySkills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
+  
 
   return (
     
-    <section id="skills" className="pt-10 pb-24px relative  z-[12] ">
+    <section id="skills" className="pt-10 pb-24px relative xxl:bottom-[40rem] z-[12] ">
     <SkillsBackground className=''/>
+    <Cloud className="relative"/>
       {/* HEADER AND IMAGE SECTION */}
       <div className=" md:flex md:justify-between md:gap-16 mt-32">
       
